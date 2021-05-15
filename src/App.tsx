@@ -1,9 +1,10 @@
-import React from 'react';
-import Navbar from './components/Navbar';
 import {
   BrowserRouter as Router,
+  Switch,
+  Route,
 } from 'react-router-dom';
 import { GlobalStyle } from "./styles/GlobalStyle";
+import Home from './pages/Home';
 import { CustomThemeProvider } from './context/ThemeProvider';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
     <CustomThemeProvider>
       <Router>
         <GlobalStyle />
-        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
       </Router>
     </CustomThemeProvider>
 
