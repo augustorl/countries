@@ -5,14 +5,22 @@ export const Container = styled.div`
     div {
         display: flex;
         justify-content: space-around;
-        background-color: #fff;
-        color: rgba(0,0,0, 0.7);
+        background-color: ${({ theme }) => theme.colors.backgroundPrimary};
+        color: ${({ theme }) => theme.colors.text};
         height: 10vh;
         align-items: center;
 
+        button {
+            border: none;
+            display: flex;
+            background: none;
+            cursor: pointer;
+            color: ${({ theme }) => theme.colors.text};
+        }
+
         a {
             text-decoration: none;
-            color: inherit;
+            color: ${({ theme }) => theme.colors.text};
         }
 
         h5 {

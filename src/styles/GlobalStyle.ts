@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #f5f5f5;
+        background-color: ${({ theme }) => theme.colors.backgroundPrimary};
     }
 
     @media(max-width: 1080px) {
