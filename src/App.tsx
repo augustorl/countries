@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 import { GlobalStyle } from "./styles/GlobalStyle";
-
+import { CustomThemeProvider } from './context/ThemeProvider';
 
 function App() {
   return (
-    <Router>
-      <GlobalStyle/>
-      <Navbar/>
-    </Router>
+    <CustomThemeProvider>
+      <Router>
+        <GlobalStyle />
+        <Navbar />
+      </Router>
+    </CustomThemeProvider>
+
   );
 }
 
