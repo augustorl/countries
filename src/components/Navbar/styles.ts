@@ -10,6 +10,11 @@ export const Container = styled.div`
         height: 10vh;
         align-items: center;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         h5 {
             font-weight: 600;
         }
