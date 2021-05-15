@@ -18,4 +18,14 @@ export const Container = styled.div`
             font-size: 1.1rem;
         }        
     }
+    @media(max-width: 360px) {
+        p {
+            display: none;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+                
+    }
 `;
