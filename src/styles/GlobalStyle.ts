@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Nunito Sans', sans-serif;
     }
 
+    body {
+        background-color: #f5f5f5;
+    }
+
     @media(max-width: 1080px) {
         html {
             font-size: 93.75%;
