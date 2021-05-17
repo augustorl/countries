@@ -1,22 +1,17 @@
 import Navbar from "../components/Navbar"
 import SearchInput from "../components/SearchInput";
+import CustomSelect from "../components/CustomSelect";
 
+import { Container } from'../styles/Home';
 const Home: React.FC = () => {
     return (
-       <>
+       <Container>
         <Navbar/>
-        <div>
+        <div className="search-container">
             <SearchInput/>
-            <select  defaultValue={"default"} placeholder="">
-                <option value="default" disabled hidden>Filter by region</option>
-                <option value="africa">Africa</option>
-                <option value="america">America</option>
-                <option value="asia">Asia</option>
-                <option value="europe">Europe</option>
-                <option value="oceania">Oceania</option>
-            </select>
+            <CustomSelect />
         </div>
-       </>
+       </Container>
     );
   };
   
