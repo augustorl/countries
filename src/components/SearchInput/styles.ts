@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 
 export const Container = styled.div`
-    max-width: 30vw;
    
     box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.0532439);
 
@@ -10,7 +9,7 @@ export const Container = styled.div`
         background: ${({ theme }) => theme.colors.backgroundSecondary};
     }
     input {
-        width: 100%;
+        width: 30vw;
         color: ${({ theme }) => theme.colors.input};
         background: transparent !important;
         border: 0;
