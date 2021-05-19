@@ -12,11 +12,10 @@ const Home: React.FC = () => {
             <SearchInput/>
             <CustomSelect />
         </div>
-        <div>
+        <div className="country-list">
             <CountryList/>
         </div>
-
-       </Container>
+      </Container>
     );
   };
   
