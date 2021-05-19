@@ -23,9 +23,4 @@ export const Container = styled.div`
     svg {
         fill: ${({ theme }) => theme.colors.input};
     }
-
-    .MuiMenu-list,
-    .MuiListItem-button {
-        background: ${({ theme }) => theme.colors.backgroundSecondary};
-    }
 `;
