@@ -3,6 +3,7 @@ import SearchInput from "../components/SearchInput";
 import CustomSelect from "../components/CustomSelect";
 
 import { Container } from'../styles/Home';
+import CountryList from "../components/Country/CountryList";
 const Home: React.FC = () => {
     return (
        <Container>
@@ -11,6 +12,10 @@ const Home: React.FC = () => {
             <SearchInput/>
             <CustomSelect />
         </div>
+        <div>
+            <CountryList/>
+        </div>
+
        </Container>
     );
   };
