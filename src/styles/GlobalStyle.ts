@@ -7,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Nunito Sans', sans-serif;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
     body {
         background-color: ${({ theme }) => theme.colors.backgroundPrimary};
