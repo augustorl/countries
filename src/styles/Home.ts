@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     margin: 0 auto;
-    height: 100vh;
-    
 
     .search-container {
         margin-top: 3rem;
@@ -12,5 +10,4 @@ export const Container = styled.div`
         justify-content: space-around;
         max-width: 1820px;
     }
-
 `;
