@@ -58,6 +58,7 @@ export const Heading = styled.h4`
 export const Details = styled.div`
   display: grid;
   gap: 0.8rem;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Info = styled.p`
