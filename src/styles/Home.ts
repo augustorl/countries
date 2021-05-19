@@ -6,10 +6,11 @@ export const Container = styled.div`
     
 
     .search-container {
-        margin-top: 4rem;
+        margin-top: 3rem;
         display: flex;
         align-items: center;
-        justify-content: space-around;        
+        justify-content: space-around;
+        max-width: 1820px;
     }
 
 `;
