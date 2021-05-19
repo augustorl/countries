@@ -6,17 +6,21 @@ import {
 import { GlobalStyle } from "./styles/GlobalStyle";
 import Home from './pages/Home';
 import { CustomThemeProvider } from './context/ThemeProvider';
+import { CountryProvider } from './context/CountryContext';
 
 function App() {
   return (
-    <CustomThemeProvider>
-      <Router>
-        <GlobalStyle />
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Router>
-    </CustomThemeProvider>
+    <CountryProvider>
+      <CustomThemeProvider>
+        <Router>
+          <GlobalStyle />
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Router>
+      </CustomThemeProvider>
+    </CountryProvider>
+
 
   );
 }
